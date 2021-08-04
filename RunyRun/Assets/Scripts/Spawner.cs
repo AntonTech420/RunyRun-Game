@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
         if (spawnRate <= 0)
         {
             spawnRate = spawnDelay;
-            randomX = Random.Range(-24.0f, -17.0f);
+            randomX = Random.Range(-25.5f, -16.5f);
             whereToSpawn = new Vector3(randomX, transform.position.y, transform.position.z);
             Instantiate(ball, whereToSpawn, Quaternion.identity);
         }

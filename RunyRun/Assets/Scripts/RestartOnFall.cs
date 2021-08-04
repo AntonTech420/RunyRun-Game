@@ -12,4 +12,11 @@ public class RestartOnFall : MonoBehaviour
         if (collision.collider.tag == strTag)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    private void OnTriggerEnter(Collider other) 
+    {
+      if(other.tag==strTag)
+      {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+      }
+    }
 }

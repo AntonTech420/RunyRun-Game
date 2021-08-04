@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3123620499623264295}
   - component: {fileID: 3950354431822704808}
   - component: {fileID: 8203481326990100482}
+  - component: {fileID: 173323692786225724}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -109,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a6a6ccb0815bd42af2a994f98924d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 15
+  timer: 3
 --- !u!54 &8203481326990100482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -118,7 +119,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4850485938747503262}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 0.75
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -126,3 +127,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &173323692786225724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4850485938747503262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d987816f7e413c4c80dc94f8f2c1f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  v3force: {x: 0, y: -0.2, z: -0.2}
