@@ -139,4 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d987816f7e413c4c80dc94f8f2c1f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  v3force: {x: 0, y: -0.2, z: -0.2}
+  v3force: {x: 0, y: -0.5, z: -0.5}
