@@ -24,7 +24,7 @@ public class SettingsMenu : MonoBehaviour
     void Update()
     {
         AudioSource.volume = MusicVolume;
-        PlayerPrefs.SetFloat("volume", MusicVolume);
+        // PlayerPrefs.SetFloat("volume", MusicVolume);
     }
 
     public void UpdateVolume( float volume) 

@@ -29,7 +29,7 @@ public class Score : MonoBehaviour
         // scoreText.text = "Time: " + time;
         
         // if(bestTime > time)
-        //PlayerPrefs.SetFloat("bestTime", 999);
+        // PlayerPrefs.SetFloat("bestTime", 999);
     }
     public void SetHighScore(float BestScore){
         if(bestTime > BestScore)

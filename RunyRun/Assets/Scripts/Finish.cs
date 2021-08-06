@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Finish : MonoBehaviour
 {
@@ -15,13 +16,9 @@ public class Finish : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         theHighScore.SetHighScore(time);
         if(other.tag == "Player"){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-        if(other.tag == "Player1"){
-        SceneManager.LoadScene("BlueWin");
-        }
-        if(other.tag == "Player2"){
-        SceneManager.LoadScene("GoldWin");
-        }
+        
     }
 }
