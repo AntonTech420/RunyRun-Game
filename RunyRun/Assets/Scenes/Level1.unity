@@ -9724,7 +9724,6 @@ GameObject:
   - component: {fileID: 481995896}
   - component: {fileID: 481995895}
   - component: {fileID: 481995894}
-  - component: {fileID: 481995897}
   - component: {fileID: 481995898}
   m_Layer: 0
   m_Name: Fin
@@ -9809,19 +9808,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481995892}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &481995897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481995892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2e475128eafaf469c3605c4297a99d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strTag: Player
 --- !u!114 &481995898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26945,7 +26931,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18982
+  m_Name: pb_Mesh273346
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

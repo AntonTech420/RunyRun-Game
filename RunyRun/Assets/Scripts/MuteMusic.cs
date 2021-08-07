@@ -11,8 +11,7 @@ public class MuteMusic : MonoBehaviour
     [SerializeField]
     AudioSource background;
     
-
-    private float isMuted;
+    private bool isMuted;
 
 
 
@@ -20,46 +19,25 @@ public class MuteMusic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isMuted = 1;
+        
+        isMuted = false;
     }
 
-    // public void MutePressed()
-    // {
-    //     isMuted = !isMuted;
-    //     AudioListener.pause = isMuted;
-    // }
     void Update()
     {
-        if(Input.GetKey(MutingMusic)&& isMuted ==0)
-        {
-            isMuted = 1.0f;
-            AudioListener.volume = isMuted;
+        if(Input.GetKey(MutingMusic)){
+            Debug.Log(isMuted);
+            if(isMuted)
+            {
+               isMuted = false;
+            AudioListener.pause = false;
+            }
+            else 
+            {
+                isMuted = true;
+            AudioListener.pause = true;
+            }
         }
-        if(Input.GetKey(MutingMusic)&& isMuted ==1.0f)
-        {
-            isMuted = 0;
-            AudioListener.volume = isMuted;
-        }
+        
     }
-
-    // public AudioListener Mute;
- 
-    //  void Start()
-    //  {
-    //      //Reference to the AudioListener component on the object
-    //      Mute = GetComponent<AudioListener>();
-    //  }
- 
-    //  void Update()
-    //  {
-    //      //Toggles sound on/off by pressing 'M'
-    //      if (Input.GetKey(KeyCode.M) && Mute.enabled == true)
-    //      {
-    //          Mute.enabled = false;
-    //      }
-    //      if (Input.GetKey(KeyCode.M) && Mute.enabled == false)
-    //      {
-    //          Mute.enabled = true;
-    //      }
-    //  }
 }

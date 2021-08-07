@@ -333,7 +333,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MutingMusic: 109
-  background: {fileID: 0}
+  background: {fileID: 203009398}
+--- !u!82 &203009398 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9145760765675810927, guid: 2b7f8f200fc3e47428b756e5ece6c587, type: 3}
+  m_PrefabInstance: {fileID: 1326123710}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &233632677
 GameObject:
   m_ObjectHideFlags: 0
